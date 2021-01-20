@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background:#ff5690
+}
+
+/* this styles the th1 (top heading) */
+h1{
+  font-size: 1.4em;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 2px solid black;
+  max-width: 60%;
+  margin: 10px auto;
+  font-family: 'Yusei Magic', sans-serif;
+  padding: 10px;
+}
+
+/* styling the main section of the page */
+main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 960px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+/* making the song to a card */
+.card{
+  width: 90%;
+  padding: 20px;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 3px 3px rgba(50, 30, 20, .4);
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+.card:hover{
+  box-shadow: 5px 5px 3px 3px rgba(50, 30, 20, .8);
+}
+
+/* styling the image holder container*/
+.imgHolder{
+  margin-bottom: 10px;
+}
+
+/* styling the image inside the image container */
+.imgHolder img{
+  flex-shrink: 0;
+}
+
+p{
+  padding: 0 10px;
+}
+
+@media only screen and (max-width: 740px) {
+  main{
+    max-width: 70%;
+  }
+
+  .card{
+    width: 100%;
+  }
+  h1{
+    max-width: 90%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  main{
+    width: 99%;
+    padding: 0;
+    margin: 0;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+  }
+}
