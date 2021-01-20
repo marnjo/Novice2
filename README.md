@@ -1,4 +1,4 @@
-# Novice
+# Novice 2
 Try out for the mdewey/Front End Challenge
 
 ## Running
